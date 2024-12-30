@@ -41,13 +41,20 @@ const MINUTE_IN_SECONDS = 60;
 const HOUR_IN_SECONDS = MINUTE_IN_SECONDS * 60;
 const DAY_IN_SECONDS = HOUR_IN_SECONDS * 24;
 
-const getCountdownShapeFromSeconds = (seconds, format) => {
+const getCountdownShapeFromSeconds = (seconds, format = false) => {
   if (!seconds) {
     return {
       days: 0,
       hours: 0,
       minutes: 0,
       seconds: 0
+    };
+  } else if (format) {
+    const hours = Math.floor(seconds / HOUR_IN_SECONDS);
+    return {
+      hours: hours,
+      minutes: Math.floor((seconds % HOUR_IN_SECONDS) / MINUTE_IN_SECONDS), // obtener el resto de las horas y dividirlo por los segundos que hay en un minuto
+      seconds: Math.floor(seconds % 60)
     };
   }
 
@@ -62,3 +69,4 @@ const getCountdownShapeFromSeconds = (seconds, format) => {
   };
 };
 console.log(getCountdownShapeFromSeconds(122475));
+
