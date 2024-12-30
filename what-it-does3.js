@@ -68,5 +68,5 @@ const getCountdownShapeFromSeconds = (seconds, format = false) => {
     seconds: Math.floor(seconds % 60)
   };
 };
-console.log(getCountdownShapeFromSeconds(122475));
+console.log(getCountdownShapeFromSeconds(122475, true));
 
