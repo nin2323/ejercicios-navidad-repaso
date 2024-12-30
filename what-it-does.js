@@ -337,3 +337,4 @@ function isConnected(network) {
   return CONNECTED_NETWORKS[network];
 };
 console.log(isConnected('instagram'));
+
