@@ -306,7 +306,7 @@ function realName(newName) {
       return 'Nunca has conectado tu cuenta'
     } return username;
   };
-  console.log(nameSocialMedia('twitter'));
+  console.log(nameSocialMedia('facebook'));
 
   /**
  * 11. Algunas redes sociales se pueden conectar de distintas formas en función de ciertas características.
