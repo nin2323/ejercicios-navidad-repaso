@@ -338,3 +338,37 @@ function isConnected(network) {
 };
 console.log(isConnected('instagram'));
 
+
+function validatePIN (pin) {
+  if ((pin.length === 4 || pin.length === 6) && (/^[0-9]+$/.test(pin))) {
+    return true;
+  } return false;  
+}
+console.log(validatePIN('12345t'));
+
+
+function rentalCarCost(d) {
+  if (d >= 7) {
+  return (d * 40) - 50;
+  } if (d >= 3 && d < 7) {
+    return (d * 40) - 20
+  } else if (d >=1 || d <=2) {
+    return d * 40;
+  };
+};
+console.log(rentalCarCost(9));
+
+
+
+const holaNames = (names) => {
+  const namesArray = names.split(' ');
+  return namesArray.map(name => `Hola, ${name}!`);
+}
+console.log(holaNames('Pepito Juan Paco'));
+
+
+const date = new Date (); 
+console.log(date);
+
+const date = new Date (1995-8-11); 
+console.log(date);

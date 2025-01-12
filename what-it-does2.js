@@ -23,4 +23,4 @@ const getFileNameFromUrl = (url, includeExtension = false) => {
   };
 
   // www.juan.com/archivos/index.pdf
-  // 
+  // Intenta acceder a una carpeta de archivos que se encuentra después del último '.' ??
